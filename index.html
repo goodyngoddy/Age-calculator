@@ -2,22 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <title>HTML</title>
-  
-  <!-- HTML -->
-  
-
-  <!-- Custom Styles -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-</head>
+  <title>Frontend Mentor | Age calculator app</title>
 
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
 <body>
-  <p>Nothing to see here...</p>
-  <h1>the place of worship</h1>
-  <!-- Project -->
+  <div class="container">
+    <div class="input-section">
+      <div class="input-item">
+        <div class="input-label">
+          Day
+        </div>
+        <input type="number" id="day-input" placeholder="DD" length="2">
+      </div>
+      <div class="input-item">
+        <div class="input-label">
+          Month
+        </div>
+        <input type="number" id="month-input" placeholder="MM" maxlength="2">
+      </div>
+      <div class="input-item">
+        <div class="input-label">
+          Year
+        </div>
+        <input type="number" id="year-input" placeholder="YYYY" maxlength="4">
+      </div>
+    </div>
+    <div class="error-section">
+      <div class="error day"></div>
+      <div class="error month"></div>
+      <div class="error year"></div>
+    </div>
+    
+    <div class="btn-section">
+      <div class="line"></div>
+      <div class="svg-btn"></div>
+    </div>
+    
+    <div class="display">
+      <div class="display-item">
+        <span id="year-value">--</span> years
+      </div>
+      <div class="display-item">
+        <span id="month-value">--</span> months
+      </div>
+      <div class="display-item">
+        <span id="day-value">--</span> days
+      </div>
+    </div>
+  </div>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
   <script src="main.js"></script>
 </body>
 </html>
